@@ -1,0 +1,195 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.claro {
+    background-color: #dad3cd;
+    color: #1b1f22; 
+}
+
+.escuro {
+    background-color: #1b1f22; 
+    color: #dad3cd; 
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.texto-destacado {
+    color: #dad3cd;
+    background-color: #1b1f22;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.destacado {
+    background-color: #dad3cd;
+    color: #1b1f22;
+    padding: 2px 4px; 
+    border-radius: 1px;
+}
+
+.container {
+    background-color: inherit;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.claro .container {
+    color: #1b1f22;
+}
+
+.escuro .container {
+    color: #dad3cd; 
+}
+
+
+/* navbar */
+
+.navbar-principal {
+    background-color: #dad3cd; 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-principal .navbar-links a {
+    color: #1b1f22; 
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-principal .navbar-links a:hover {
+    text-decoration: underline; 
+}
+
+
+/*animacao do texto*/
+
+.typewriter {
+    overflow: hidden;
+    display: flex;
+
+}
+
+#typed-text {
+    border-right: 2px solid #000;
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 0;
+    font-size: 110px;
+    animation: typing 3s steps(14) forwards, blink-caret 0.90s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 34%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #000;
+    }
+}
+
+/*imageeemns*/
+.imagem-inferior-direito {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 11%;
+    margin-bottom: -15px;
+}
+
+
+
+/* projetos */
+
+.catalogo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 22%; 
+    background-color: #1b1f22;
+    color: #dad3cd;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #dad3cd;
+    color: #1b1f22;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #57514c;
+  }
+
+  /*contato*/
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .info {
+    margin-bottom: 10px;
+  }
+  
+  i {
+    margin-right: 5px;
+  }
