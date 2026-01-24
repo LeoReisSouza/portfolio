@@ -17,6 +17,7 @@ html {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .claro {
@@ -156,9 +157,9 @@ p {
 .imagem-inferior-direito {
     position: absolute;
     bottom: 0;
-    right: 0;
     right: 11%;
-    margin-bottom: -15px;
+    height: 60vh;
+    z-index: 10;
 }
 
 
