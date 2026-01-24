@@ -48,8 +48,8 @@ p {
 .destacado {
     background-color: #dad3cd;
     color: #1b1f22;
-    padding: 2px 4px; 
-    border-radius: 1px;
+    padding: 1px; 
+    border-radius: 2px;
 }
 
 .container {
@@ -93,6 +93,27 @@ p {
 
 .navbar-principal .navbar-links a:hover {
     text-decoration: underline; 
+}
+
+/* Estados dinâmicos da navbar */
+.navbar-clara {
+    background-color: #dad3cd;
+    transition: all 0.3s ease;
+}
+
+.navbar-clara .navbar-brand,
+.navbar-clara .navbar-links a {
+    color: #1b1f22;
+}
+
+.navbar-escura {
+    background-color: #1b1f22;
+    transition: all 0.3s ease;
+}
+
+.navbar-escura .navbar-brand,
+.navbar-escura .navbar-links a {
+    color: #dad3cd;
 }
 
 
@@ -190,6 +211,25 @@ p {
     margin-bottom: 10px;
   }
   
-  i {
+i {
     margin-right: 5px;
+  }
+
+  /* Estilos para links de contato */
+  .info a {
+      color: #dad3cd;
+      text-decoration: none;
+  }
+
+  .info a:hover {
+      color: #dad3cd;
+      text-decoration: underline;
+  }
+
+  .info a:visited {
+      color: #dad3cd;
+  }
+
+  .info a:active {
+      color: #dad3cd;
   }
