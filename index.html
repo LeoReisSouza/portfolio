@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,21 +9,15 @@
 
     <link rel="stylesheet" href="style.css">
 
-
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-Cv8t+6QIBGhqZvlUW2hdTpXBxkeT+TZI2dRRcWeQjz92q3S+xW8IFOnDCh9MOwP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Pixelify+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
 
 </head>
@@ -31,9 +25,9 @@
 <body>
 
 <div class="navbar-principal navbar-clara">
-    <div class="container" style="font-size: 24px;">
+    <div class="container navbar-container">
         <a class="navbar-brand" href="#">Portfólio</a>
-        <div class="navbar-links" style="font-size: 24px; font-family: 'Pixelify Sans', sans-serif;">
+        <div class="navbar-links">
             <a href="#perfil">Perfil</a>
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
@@ -56,11 +50,14 @@
     <!-- Conteúdo da sessão escura -->
     <div class="container">
         <h1>Perfil</h1>
-        <p style="font-size: 17px">Sou <span class="destacado">Desenvolvedor</span> de Software com atuação como <span class="destacado">Analista de Negócios em TI</span>, 
-            formado pelo IFSP em Análise e Desenvolvimento de Sistemas. Trabalho como full stack com <span class="destacado">Python</span>, Django, PHP, <span class="destacado">Laravel</span>, 
-            React, Vue, <span class="destacado">SQL</span> e APIs REST, desenvolvendo soluções para <span class="destacado">meios de pagamento</span> (PIX, boletos e ordens de pagamento). 
-            Atuo no levantamento e priorização de requisitos, alinhamento com áreas técnicas e de negócio, definição de funcionalidades, 
-            testes, homologações e evolução de produtos.</p>
+        <p class="perfil-texto">Sou <span class="destacado">Desenvolvedor de Software</span> e <span class="destacado">Analista de Negócios em TI</span>, formado pelo Instituto Federal de São Paulo (IFSP).
+            Atuo na integração entre negócio e tecnologia, desenvolvendo soluções para o core bancário <span class="destacado">Autbank</span> e
+            <span class="destacado">meios de pagamento</span> (Pix, TED e boletos), em conformidade com as regulamentações do <span class="destacado">Banco Central</span>.
+            Participo de todo o ciclo de desenvolvimento, desde o levantamento de requisitos até a implementação e homologação das soluções.</p>
+        <p class="perfil-texto">Tenho mais de 3 anos de experiência em desenvolvimento Back-End e Front-End, utilizando <span class="destacado">Python</span> para aplicações desktop e automações,
+            <span class="destacado">Laravel e PHP</span> para aplicações web e <span class="destacado">C#</span> para desenvolvimento de microsserviços.
+            Também atuo com integração de <span class="destacado">APIs REST</span>, modelagem e consultas <span class="destacado">SQL</span>, testes unitários e de integração,
+            além da automação de processos com agentes de IA utilizando Microsoft <span class="destacado">Copilot Studio</span> e <span class="destacado">Claude</span> Anthropic.</p>
     </div>
 </div>
 
@@ -69,32 +66,32 @@
         <h1>Projetos</h1>
         <p>Aqui estão</p>
         <div class="catalogo">
-            <div class="card" style="background-color: #1b1f22;">
-                <img src="https://images.pexels.com/photos/25626435/pexels-photo-25626435.jpeg?_gl=1*1kzf5ey*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIwNDckajI0JGwwJGgw">
-                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">Ciência de Dados</p>
-                <p  style="color: #dad3cd; font-size:14px">IA e processamento de imagens para segmentação pulmonar em Python</p>
-                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza/torax/blob/main/analysis.ipynb'">Visualizar</button>
-            </div>
-            
-            <div class="card"  style="background-color: #1b1f22;">
-                <img src="https://images.pexels.com/photos/25626432/pexels-photo-25626432.jpeg?_gl=1*le7o7v*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIxMjYkajIyJGwwJGgw">
-                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">Finanças com IA</p>
-                <p  style="color: #dad3cd; font-size:14px">Assistente financeiro com IA, LangChain e interface interativa em Python</p>
-                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza/FinanceiroIA'">Visualizar</button>
-            </div>
-            
-            <div class="card"  style="background-color: #1b1f22;">
-                <img src="https://images.pexels.com/photos/25626446/pexels-photo-25626446.jpeg?_gl=1*ajpmju*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIwODkkajU5JGwwJGgw">
-                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">TCC - Chatbot</p>
-                <p  style="color: #dad3cd; font-size:14px">Chatbot interno com IA para consultas e análise de dados em JS e Python</p>
-                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza/chatbot'">Visualizar</button>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/25626435/pexels-photo-25626435.jpeg?_gl=1*1kzf5ey*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIwNDckajI0JGwwJGgw" alt="Projeto de Ciência de Dados">
+                <p class="card-titulo">Ciência de Dados</p>
+                <p class="card-descricao">IA e processamento de imagens para segmentação pulmonar em Python</p>
+                <button onclick="window.location.href='https://github.com/LeoReisSouza/torax/blob/main/analysis.ipynb'">Visualizar</button>
             </div>
 
-            <div class="card"  style="background-color: #1b1f22;">
-                <img src="https://images.pexels.com/photos/25626442/pexels-photo-25626442.jpeg?_gl=1*1yghwo7*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIxNDYkajIkbDAkaDA.">
-                <p style="color: #dad3cd; font-size:25px;font-family: 'Pixelify Sans', sans-serif;">APP Mobile</p>
-                <p  style="color: #dad3cd; font-size:14px">Aplicativo de E-commerce para quitanda desenvolvido em TypeScript</p>
-                <button style="font-family: 'Pixelify Sans', sans-serif;" onclick="window.location.href='https://github.com/LeoReisSouza/pomar'">Visualizar</button>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/25626432/pexels-photo-25626432.jpeg?_gl=1*le7o7v*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIxMjYkajIyJGwwJGgw" alt="Projeto Finanças com IA">
+                <p class="card-titulo">Finanças com IA</p>
+                <p class="card-descricao">Assistente financeiro com IA, LangChain e interface interativa em Python</p>
+                <button onclick="window.location.href='https://github.com/LeoReisSouza/FinanceiroIA'">Visualizar</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/25626446/pexels-photo-25626446.jpeg?_gl=1*ajpmju*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIwODkkajU5JGwwJGgw" alt="Projeto TCC Chatbot">
+                <p class="card-titulo">TCC - Chatbot</p>
+                <p class="card-descricao">Chatbot interno com IA para consultas e análise de dados em JS e Python</p>
+                <button onclick="window.location.href='https://github.com/LeoReisSouza/chatbot'">Visualizar</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/25626442/pexels-photo-25626442.jpeg?_gl=1*1yghwo7*_ga*MTY1NTQwODAxMy4xNzY5MjcyMDEx*_ga_8JE65Q40S6*czE3NjkyNzIwMTEkbzEkZzEkdDE3NjkyNzIxNDYkajIkbDAkaDA." alt="Projeto App Mobile">
+                <p class="card-titulo">APP Mobile</p>
+                <p class="card-descricao">Aplicativo de E-commerce para quitanda desenvolvido em TypeScript</p>
+                <button onclick="window.location.href='https://github.com/LeoReisSouza/pomar'">Visualizar</button>
             </div>
         </div>
     </div>
@@ -106,16 +103,16 @@
         <div class="contato">
 
             <div class="info">
-                 <i class="material-icons" style="color: #dad3cd;">link</i>  <a href="https://www.linkedin.com/in/leonardo-reiss/" target="_blank">Linkedin</a>
+                <i class="material-icons">link</i> <a href="https://www.linkedin.com/in/leonardo-reiss/" target="_blank">Linkedin</a>
             </div>
 
             <div class="info">
-                <i class="material-icons" style="color: #dad3cd;">email</i>
+                <i class="material-icons">email</i>
                 <a href="mailto:leonardoleoreissouza05@gmail.com">leonardoleoreissouza05@gmail.com</a>
             </div>
 
             <div class="info">
-                 <i class="material-icons" style="color: #dad3cd;">memory</i>  <a href="https://github.com/LeoReisSouza" target="_blank">GitHub</a>
+                <i class="material-icons">memory</i> <a href="https://github.com/LeoReisSouza" target="_blank">GitHub</a>
             </div>
 
         
@@ -123,73 +120,7 @@
     </div>
 </div>
 
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const textElement = document.getElementById('typed-text');
-      const text = "Leo Reis";
-
-        textElement.innerText = text;
-
-        textElement.classList.add('typing-animation');
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const sections = document.querySelectorAll('.section');
-        const navbar = document.querySelector('.navbar-principal');
-        
-        let dominantSection = null;
-        
-        const updateNavbar = () => {
-            let maxVisibleRatio = 0;
-            let currentDominant = null;
-            
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
-                const totalHeight = rect.height;
-                const visibleRatio = visibleHeight / totalHeight;
-                
-                if (visibleRatio > maxVisibleRatio) {
-                    maxVisibleRatio = visibleRatio;
-                    currentDominant = section;
-                }
-            });
-            
-            if (currentDominant && currentDominant !== dominantSection) {
-                dominantSection = currentDominant;
-                
-                // Remover classes existentes
-                navbar.classList.remove('navbar-clara', 'navbar-escura');
-                
-                // Adicionar classe baseada na seção dominante
-                if (dominantSection.classList.contains('claro')) {
-                    navbar.classList.add('navbar-clara');
-                } else if (dominantSection.classList.contains('escuro')) {
-                    navbar.classList.add('navbar-escura');
-                }
-            }
-        };
-        
-        // Observer para detectar seções visíveis
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: Array.from({length: 101}, (_, i) => i / 100)
-        };
-        
-        const observer = new IntersectionObserver(updateNavbar, observerOptions);
-        sections.forEach(section => observer.observe(section));
-        
-        // Fallback para scroll e resize
-        window.addEventListener('scroll', updateNavbar);
-        window.addEventListener('resize', updateNavbar);
-        
-        // Estado inicial
-        updateNavbar();
-    });
-
-</script>
+<script src="js/main.js" defer></script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -47,10 +51,11 @@ p {
 }
 
 .destacado {
-    background-color: #dad3cd;
-    color: #1b1f22;
-    padding: 1px; 
-    border-radius: 2px;
+    border-bottom: 2px solid #dad3cd;
+}
+
+.perfil-texto {
+    font-size: 17px;
 }
 
 .container {
@@ -85,9 +90,22 @@ p {
     align-items: center;
 }
 
+.navbar-container {
+    font-size: 24px;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 24px;
+}
 
 .navbar-principal .navbar-links a {
-    color: #1b1f22; 
+    color: #1b1f22;
     text-decoration: none;
     margin-left: 20px;
 }
@@ -123,16 +141,16 @@ p {
 .typewriter {
     overflow: hidden;
     display: flex;
-
+    max-width: 100%;
 }
 
 #typed-text {
     border-right: 2px solid #000;
-    white-space: nowrap; 
+    white-space: nowrap;
     overflow: hidden;
     width: 0;
-    font-size: 110px;
-    animation: typing 3s steps(14) forwards, blink-caret 0.90s infinite;
+    font-size: clamp(40px, 12vw, 110px);
+    animation: typing 3s steps(8) forwards, blink-caret 0.90s infinite;
 }
 
 @keyframes typing {
@@ -140,7 +158,7 @@ p {
         width: 0;
     }
     to {
-        width: 34%;
+        width: 6.8ch;
     }
 }
 
@@ -159,6 +177,7 @@ p {
     bottom: 0;
     right: 11%;
     height: 60vh;
+    max-height: 500px;
     z-index: 10;
 }
 
@@ -168,36 +187,53 @@ p {
 
 .catalogo {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
-  
+
   .card {
-    width: 22%; 
-    background-color: #1b1f22;
-    color: #dad3cd;
+    width: 22%;
+    min-width: 220px;
+    background-color: #dad3cd;
+    color: #1b1f22;
     padding: 10px;
     border-radius: 15px;
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   .card img {
     width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
   }
-  
-  button {
-    background-color: #dad3cd;
+
+  .card-titulo {
     color: #1b1f22;
+    font-size: 25px;
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+
+  .card-descricao {
+    color: #1b1f22;
+    font-size: 14px;
+  }
+
+  button {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #1b1f22;
+    color: #dad3cd;
     padding: 8px 12px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
   }
-  
+
   button:hover {
-    background-color: #57514c;
+    background-color: #3a3f43;
   }
 
   /*contato*/
@@ -211,7 +247,11 @@ p {
   .info {
     margin-bottom: 10px;
   }
-  
+
+  .info i {
+    color: #dad3cd;
+  }
+
 i {
     margin-right: 5px;
   }
@@ -233,4 +273,84 @@ i {
 
   .info a:active {
       color: #dad3cd;
+  }
+
+  /* Responsivo */
+
+  @media (max-width: 992px) {
+    .card {
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-container,
+    .navbar-links {
+      font-size: 18px;
+    }
+
+    .navbar-principal .container {
+      flex-direction: column;
+      gap: 8px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .navbar-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar-links a {
+      margin: 0 8px;
+    }
+
+    #home {
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    .imagem-inferior-direito {
+      position: static;
+      right: auto;
+      bottom: auto;
+      height: auto;
+      width: 70%;
+      max-width: 320px;
+      margin-top: auto;
+      margin-bottom: 0;
+      display: block;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    .contato {
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar-container,
+    .navbar-links {
+      font-size: 14px;
+    }
+
+    .navbar-links a {
+      margin-left: 8px;
+    }
+
+    .container {
+      padding: 15px;
+    }
+
+    .imagem-inferior-direito {
+      width: 85%;
+    }
   }
